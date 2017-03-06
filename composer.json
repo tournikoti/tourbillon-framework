@@ -1,0 +1,21 @@
+{
+    "name": "tournikoti/tourbillon-framework",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gwennael Jean",
+            "email": "gwennael.jean@trsb.net"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.3.3",
+        "tournikoti/tourbillon-configurator": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tourbillon\\": "src"
+        }
+    }
+}
