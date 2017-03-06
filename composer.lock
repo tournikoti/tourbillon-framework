@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "11019dfbf1069da375ca21ae9cf2b3d8",
+    "content-hash": "4615a8615bb40dd7734e99e9111973cf",
     "packages": [
         {
             "name": "symfony/yaml",
@@ -63,16 +63,16 @@
         },
         {
             "name": "tournikoti/tourbillon-configurator",
-            "version": "1.0.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tournikoti/tourbillon-configurator.git",
-                "reference": "a0d6cb77c3b53017c8f95b56d6bbca7865b01f53"
+                "reference": "72df04c32d369c5358d7eb396ec3452968f3b18f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tournikoti/tourbillon-configurator/zipball/a0d6cb77c3b53017c8f95b56d6bbca7865b01f53",
-                "reference": "a0d6cb77c3b53017c8f95b56d6bbca7865b01f53",
+                "url": "https://api.github.com/repos/tournikoti/tourbillon-configurator/zipball/72df04c32d369c5358d7eb396ec3452968f3b18f",
+                "reference": "72df04c32d369c5358d7eb396ec3452968f3b18f",
                 "shasum": ""
             },
             "require": {
@@ -95,7 +95,42 @@
                     "email": "gwennael.jean@trsb.net"
                 }
             ],
-            "time": "2017-03-06T15:40:04+00:00"
+            "time": "2017-03-06T16:33:58+00:00"
+        },
+        {
+            "name": "tournikoti/tourbillon-service-container",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tournikoti/tourbillon-service-container.git",
+                "reference": "eeeb6af23b6547c87e6f85ea991f7d4ee85c9d90"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tournikoti/tourbillon-service-container/zipball/eeeb6af23b6547c87e6f85ea991f7d4ee85c9d90",
+                "reference": "eeeb6af23b6547c87e6f85ea991f7d4ee85c9d90",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Tourbillon\\ServiceContainer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gwennael Jean",
+                    "email": "gwennael.jean@trsb.net"
+                }
+            ],
+            "time": "2017-03-06T17:13:57+00:00"
         }
     ],
     "packages-dev": [],
