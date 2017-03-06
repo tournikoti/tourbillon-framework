@@ -21,11 +21,6 @@ class Tourbillon
      */
     protected $serviceLocator;
 
-    public function __construct()
-    {
-        
-    }
-
     /**
      * Permet de lancer l'application. Utilise dans le fichier index.php a la
      * racine
@@ -33,7 +28,7 @@ class Tourbillon
     public function run()
     {
         $configurator = Configurator::getInstance($this->configPath);
-        $this->serviceLocator = new ServiceLocator($configurator->get('services'));
+        $this->serviceLocator = new ServiceLocator((array) $configurator->get('services'));
     }
 
     /**
