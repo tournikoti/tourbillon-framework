@@ -1,0 +1,8 @@
+## YAML Template.
+---
+parameters:
+    database_host: database
+    database_port: null
+    database_name: gisele
+    database_user: root
+    database_password: null

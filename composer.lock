@@ -63,16 +63,16 @@
         },
         {
             "name": "tournikoti/tourbillon-configurator",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tournikoti/tourbillon-configurator.git",
-                "reference": "72df04c32d369c5358d7eb396ec3452968f3b18f"
+                "reference": "8fd3f33a824d21186693e5837233bcb8209f019b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tournikoti/tourbillon-configurator/zipball/72df04c32d369c5358d7eb396ec3452968f3b18f",
-                "reference": "72df04c32d369c5358d7eb396ec3452968f3b18f",
+                "url": "https://api.github.com/repos/tournikoti/tourbillon-configurator/zipball/8fd3f33a824d21186693e5837233bcb8209f019b",
+                "reference": "8fd3f33a824d21186693e5837233bcb8209f019b",
                 "shasum": ""
             },
             "require": {
@@ -95,7 +95,7 @@
                     "email": "gwennael.jean@trsb.net"
                 }
             ],
-            "time": "2017-03-06T16:33:58+00:00"
+            "time": "2017-03-06T17:33:36+00:00"
         },
         {
             "name": "tournikoti/tourbillon-service-container",

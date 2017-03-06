@@ -1,2 +1,4 @@
 ## YAML Template.
 ---
+imports:
+    - parameters.yml

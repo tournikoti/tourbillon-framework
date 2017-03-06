@@ -2,6 +2,9 @@
 
 namespace Tourbillon;
 
+use Tourbillon\Configurator\Configurator;
+use Tourbillon\ServiceContainer\ServiceLocator;
+
 /**
  * Description of Tourbillon
  *
@@ -9,9 +12,14 @@ namespace Tourbillon;
  */
 class Tourbillon
 {
-    static protected $oInstance;
-    static protected $configPath;
-    static protected $mode;
+    protected $configPath;
+    protected $mode;
+
+    /**
+     *
+     * @var ServiceLocator
+     */
+    protected $serviceLocator;
 
     public function __construct()
     {
@@ -22,36 +30,35 @@ class Tourbillon
      * Permet de lancer l'application. Utilise dans le fichier index.php a la
      * racine
      */
-    public static function run()
+    public function run()
     {
-        if (self::$oInstance === null) {
-            self::$oInstance = new self();
-        }
+        $configurator = Configurator::getInstance($this->configPath);
+        $this->serviceLocator = new ServiceLocator($configurator->get('services'));
     }
 
     /**
      *
      * @param string $path
      */
-    public static function configuration($path)
+    public function setConfiguration($path)
     {
-        self::$configPath = $path;
+        $this->configPath = $path;
     }
 
     /**
      *
      * @param string $mode
      */
-    public static function mode($mode)
+    public function setMode($mode)
     {
-        self::$mode = $mode;
+        $this->mode = $mode;
     }
 
     /**
      *
      * @param string $mode
      */
-    public static function getMode()
+    public function getMode()
     {
         return self::$mode;
     }
