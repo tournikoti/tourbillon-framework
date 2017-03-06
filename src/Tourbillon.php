@@ -29,6 +29,7 @@ class Tourbillon
     {
         $configurator = Configurator::getInstance($this->configPath);
         $this->serviceLocator = new ServiceLocator((array) $configurator->get('services'));
+        
     }
 
     /**

@@ -3,3 +3,4 @@
 imports:
     - parameters.yml
     - services.yml
+    - routing.yml
