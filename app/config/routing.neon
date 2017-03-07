@@ -1,2 +1,5 @@
 routing:
-    
+    home:
+        url: ''
+        controller: src\Controller\Index
+        action: index
