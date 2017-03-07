@@ -11,12 +11,11 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=5.3.3",
-        "tournikoti/tourbillon-configurator": "^1.1",
-        "tournikoti/tourbillon-service-container": "^1.0"
+        "tournikoti/tourbillon": "^1.0"
     },
     "autoload": {
         "psr-4": {
-            "Tourbillon\\": "src"
+            "src\\": "src"
         }
     }
 }
