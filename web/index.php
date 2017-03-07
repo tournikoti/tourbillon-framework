@@ -6,7 +6,7 @@ require '../vendor/autoload.php';
 
 $app = new Tourbillon();
 
-$app->setConfiguration(realpath('../app/config/config.yml'));
+$app->setConfiguration(realpath('../app/config/config.neon'));
 $app->setMode('DEV');
 
 $app->run();
