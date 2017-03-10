@@ -2,3 +2,7 @@ imports:
     - parameters.neon
     - services.neon
     - routing.neon
+
+view:
+    template: \Tourbillon\Response\View\Dwoo
+    resources: "app/"

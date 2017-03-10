@@ -1,10 +1,10 @@
 <?php
 
-use Tourbillon\Tourbillon;
-
 require '../vendor/autoload.php';
 
-$app = new Tourbillon();
+require_once __DIR__ . '/../app/Application.php';
+
+$app = new Application();
 
 $app->setConfiguration(realpath('../app/config/config.neon'));
 $app->setMode('DEV');
