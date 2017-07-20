@@ -1,5 +1,5 @@
 {extends "layout.tpl"}
 
 {block "content"}
-    Welcome to my amazing homepage
+    Bienvenue sur le framework Tourbillon
 {/block}
