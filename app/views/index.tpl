@@ -1,4 +1,4 @@
-{extends "base.html"}
+{extends "layout.tpl"}
 
 {block "content"}
     Welcome to my amazing homepage
