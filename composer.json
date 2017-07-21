@@ -10,7 +10,7 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "php": ">=5.3.3",
+        "php": ">=5.6",
         "tournikoti/tourbillon": "^1.0",
         "symfony/var-dumper": "^3.2"
     },
