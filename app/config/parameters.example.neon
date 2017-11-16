@@ -2,6 +2,6 @@ parameters:
     database_driver: mysql
     database_host: localhost
     database_port: null
-    database_name: tourbillon_framework
-    database_user: root
+    database_name: null
+    database_user: null
     database_password: null
