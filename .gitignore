@@ -2,4 +2,6 @@
 /nbproject/
 /composer.lock
 
+/app/config/parameters.neon
+
 /var/views/*
