@@ -6,3 +6,14 @@ imports:
 view:
     template: \Tourbillon\Response\View\Dwoo\Dwoo
     resources: "%app.root_dir%/views"
+
+database:
+    default:
+        driver: %database_driver%
+        host: %database_host%
+        port: %database_port%
+        database: %database_name%
+        user: %database_user%
+        password: %database_password%
+
+    

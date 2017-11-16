@@ -1,6 +1,7 @@
 parameters:
-    database_host: database
+    database_driver: mysql
+    database_host: localhost
     database_port: null
-    database_name: gisele
+    database_name: tourbillon_framework
     database_user: root
     database_password: null
