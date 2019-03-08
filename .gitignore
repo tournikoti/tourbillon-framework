@@ -1,3 +1,16 @@
+###> IDE ###
+/.idea/
+###< IDE ###
+
+###> Docker ###
+/.docker/.env
+/.docker/dockerfiles/database/data/
+!/.docker/dockerfiles/database/data/.gitkeep
+/.docker/dockerfiles/database/import/
+!/.docker/dockerfiles/database/import/.gitkeep
+/.bash_history
+###< Docker ###
+
 /vendor/
 /nbproject/
 /composer.lock

@@ -1,0 +1,62 @@
+version: '2'
+services:
+    database:
+        image: mysql:5.7
+        ports:
+            - 3308:3306
+        volumes:
+            - ./dockerfiles/database/data:/var/lib/mysql
+            - ./dockerfiles/database/import:/import
+        environment:
+            - "MYSQL_ROOT_PASSWORD=${BDD_MYSQL_ROOT_PASSWORD}"
+            - "MYSQL_USER=${BDD_MYSQL_USER}"
+            - "MYSQL_PASSWORD=${BDD_MYSQL_PASSWORD}"
+            - "MYSQL_DATABASE=${BDD_MYSQL_DATABASE}"
+
+    maildev:
+        image: djfarrelly/maildev:0.13.4
+        ports:
+            - 193:80
+
+    php:
+        build: ./dockerfiles/php
+        ports:
+            - 9002:9000
+        volumes:
+            - "${SOURCE_ROOT_FOLDER}:/var/www"
+        links:
+            - database:database
+            - maildev:maildev
+        environment:
+            - PRODUCTION=false
+            - APP_ENV=${APP_ENV}
+
+    httpd:
+        build: ./dockerfiles/httpd
+        ports:
+            - 191:80
+        links:
+            - php:php
+        volumes_from:
+            - php
+
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        ports:
+            - 192:80
+        links:
+            - database
+        environment:
+            - PMA_HOST=database
+
+    composer:
+        image: composer
+        volumes:
+            - ${SOURCE_ROOT_FOLDER}:/app/
+        links:
+            - database
+        environment:
+              - "MYSQL_ROOT_PASSWORD=${BDD_MYSQL_ROOT_PASSWORD}"
+              - "MYSQL_USER=${BDD_MYSQL_USER}"
+              - "MYSQL_PASSWORD=${BDD_MYSQL_PASSWORD}"
+              - "MYSQL_DATABASE=${BDD_MYSQL_DATABASE}"
