@@ -4,7 +4,7 @@ imports:
     - routing.neon
 
 view:
-    template: \Tourbillon\Response\View\Dwoo\Dwoo
+    template: \Tourbillon\Response\View\Twig\Twig
     resources: "%app.root_dir%/views"
 
 database:
@@ -15,5 +15,3 @@ database:
         database: %database_name%
         user: %database_user%
         password: %database_password%
-
-    

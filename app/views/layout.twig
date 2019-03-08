@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>{% block title %}Tourbillon Framework{% endblock %}</title>
+        <link type="text/css" rel="stylesheet" href="{# asset("css/main.css") #}" />
+    </head>
+    <body>
+        <h1>{% block page_title %}Tourbillon Framework{% endblock %}</h1>
+        <div id="content">
+            {% block content %}{% endblock %}
+        </div>
+    </body>
+</html>
